@@ -1,3 +1,5 @@
 #!flask/bin/python
 from app import app
-app.run(debug=True, ssl_context=('./ssl.crt', './ssl.key'))
+if __name__ == '__main__':
+   # app.run(host='0.0.0.0',port='7000',debug=True, ssl_context=('./ssl.crt', './ssl.key'))
+    app.run()
