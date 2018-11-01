@@ -2,7 +2,9 @@
 <html>
 <body>
   Welcome to Providentia
-  <img src="{{url_for('static', filename='img/test.jpg')}}" />
+  {% for image in images %}
+  <img src="{{url_for('static', filename=image)}}" alt="{{image}}">
+  {% endfor %}
 
 </body>
 </html>
