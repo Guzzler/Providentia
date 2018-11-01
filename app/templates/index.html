@@ -63,6 +63,23 @@
 						<!-- End Elastislide Carousel Thumbnail Viewer -->
 					</div><!-- rg-thumbs -->
 				</div><!-- rg-gallery -->
+			<div class='row'>
+			 <div class='col-md-4'>
+		 		<h1> Temperature</h1>
+                                <img class='ticon' src="{{url_for('static', filename='images/temperature.png')}}"/>
+                        	<h1> {{temperature}} C</h1> 
+			</div>
+                         <div class='col-md-4'>
+                        	<h1> Humidity</h1>
+                                <img class='ticon' src="{{url_for('static', filename='images/humidity.png')}}"/>
+                                <h1>{{humidity}} %</h1>
+                         </div>
+                          <div class='col-md-4'>
+                        	<h1> Distance to last Object</h1>
+                                <img class='ticon' src="{{url_for('static', filename='images/distance.png')}}"/>
+                                <h1>{{distance}} cm</h1>
+			 </div>
+			</div>
 			</div><!-- content -->
 		</div><!-- container -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
