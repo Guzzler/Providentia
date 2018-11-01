@@ -29,8 +29,9 @@ for prediction in results.predictions:
         cv2.putText(img,str(prediction.tag_name),(int(x1),int(y1)), cv2.FONT_HERSHEY_DUPLEX,5.0,(255,255,255),2)
 
        # cv2.putText(img, str(prediction.tag_name), (int(x1), int(y1+15)), cv2.FONT_HERSHEY_DUPLEX, 1.0, (255, 0, 255),cv2.LINE_AA)  
-img=cv2.resize(img,(224,224))
+img2=cv2.resize(img,(65,65))
 cv2.imwrite(sys.argv[2],img)
+cv2.imwrite(sys.argv[3],img2)
 
   
 

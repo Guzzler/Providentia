@@ -16,7 +16,7 @@ def upload():
     print(newfilename)
     newfilename= str(newfilename)
     file.save('app/static/img/unpredicted/'+newfilename+'.jpg')
-    os.system('python app/prediction.py app/static/img/unpredicted/'+newfilename+'.jpg'+' app/static/img/predicted/'+newfilename+'.jpg')
+    os.system('python app/prediction.py app/static/img/unpredicted/'+newfilename+'.jpg'+' app/static/img/predicted/'+newfilename+'.jpg'+' app/static/thumbs/img/predicted/'+newfilename+'.jpg')
     predictedimages = os.listdir('./app/static/img/predicted')
     predictedimages = ['/img/predicted/'+file for file in predictedimages]
     return render_template('index.html',images=predictedimages)
